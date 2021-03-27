@@ -1,0 +1,145 @@
+﻿@page
+@model gaming_full_stack_website.Pages.ForumModel
+@{
+}
+<section id="page-heading">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="content">
+							<h1>Forums</h1>
+							<p>Game forums to get a feel for how their guild works. A quick, but somewhat unexpected explanation about PVP is: "You might want more than 50 players in your party because you need some serious combat experience on the fly</p>
+							<form>
+
+								<div class="form-group">
+									<input type="text" name="search" class="form-control" placeholder="Search Forum">
+								</div>
+								<button class="flayer-button btn-block mt-3">Search</button>
+
+								
+							</form>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="img-border">
+							<div class="img-bg">
+								<img alt="Image Title" src="/images/comp/heading-img.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<!-- forums -->
+		<section id="forums">
+			<div class="container">
+				<!--forums cat list -->
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th width="60%">Forum</th>
+							<th width="10%" class="text-center">Topics</th>
+							<th width="10%" class="text-center">Posts</th>
+							<th width="20%" class="text-center">Last Post</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a asp-page="forums-listing">
+									<div class="row">
+										<div class="col-3">
+											<img alt="Image Title" src="/images/tournaments/s1.png">
+										</div>
+										<div class="col-9">
+											<h4 class="title">Shooter</h4>
+											<p class="detail mb-0">Play with us and be a gun slinger</p>
+										</div>
+									</div>
+								</a>
+								
+							</td>
+							<td class="text-center">4</td>
+							<td class="text-center">30</td>
+							<td class="text-center"><p class="time mb-0">1 week ago</p> <p class="user"><i class="fa fa-user"></i>&nbsp; Jassica</p> </td>
+						</tr>
+						<tr>
+							<td>
+								<a asp-page="forums-listing">
+									<div class="row">
+										<div class="col-3">
+											<img alt="Image Title" src="/images/tournaments/s1.png">
+										</div>
+										<div class="col-9">
+											<h4 class="title">Clawns</h4>
+											<p class="detail mb-0">Play with us and make it fun</p>
+										</div>
+									</div>
+								</a>
+								
+							</td>
+							<td class="text-center">4</td>
+							<td class="text-center">30</td>
+							<td class="text-center"><p class="time mb-0">1 week ago</p> <p class="user"><i class="fa fa-user"></i>&nbsp; Jassica</p> </td>
+						</tr>
+						<tr>
+							<td>
+								<a asp-page="forums-listing">
+									<div class="row">
+										<div class="col-3">
+											<img alt="Image Title" src="/images/tournaments/s1.png">
+										</div>
+										<div class="col-9">
+											<h4 class="title">Farmer</h4>
+											<p class="detail mb-0">Play with us and make it fun</p>
+										</div>
+									</div>
+
+								</a>
+							</td>
+							<td class="text-center">4</td>
+							<td class="text-center">30</td>
+							<td class="text-center"><p class="time mb-0">1 week ago</p> <p class="user"><i class="fa fa-user"></i>&nbsp; Jassica</p> </td>
+						</tr>
+						<tr>
+							<td>
+								<a asp-page="forums-listing">
+									<div class="row">
+										<div class="col-3">
+											<img alt="Image Title" src="/images/tournaments/s1.png">
+										</div>
+										<div class="col-9">
+											<h4 class="title">Tigers</h4>
+											<p class="detail mb-0">Play with us and make it fun</p>
+										</div>
+									</div>
+
+								</a>
+							</td>
+							<td class="text-center">4</td>
+							<td class="text-center">30</td>
+							<td class="text-center"><p class="time mb-0">1 week ago</p> <p class="user"><i class="fa fa-user"></i>&nbsp; Jassica</p> </td>
+						</tr>
+						<tr>
+							<td>
+								<a asp-page="forums-listing">
+									<div class="row">
+										<div class="col-3">
+											<img alt="Image Title" src="/images/tournaments/s1.png">
+										</div>
+										<div class="col-9">
+											<h4 class="title">Adventure</h4>
+											<p class="detail mb-0">Play with us and make it fun</p>
+										</div>
+									</div>
+								</a>
+							</td>
+							<td class="text-center">4</td>
+							<td class="text-center">30</td>
+							<td class="text-center"><p class="time mb-0">1 week ago</p> <p class="user"><i class="fa fa-user"></i>&nbsp; Jassica</p> </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+

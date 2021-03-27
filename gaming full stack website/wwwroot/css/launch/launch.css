@@ -1,0 +1,602 @@
+/*Font Intialize Start*/
+@font-face {
+  font-family: "Vermin Vibes V";
+  src: url("../../fonts/verminVibes/Vermin Vibes V.eot"), url("../../fonts/verminVibes/Vermin Vibes V.eot?#") format("embedded-opentype"), url("../../fonts/verminVibes/Vermin Vibes V.woff") format("woff"), url("../../fonts/verminVibes/Vermin Vibes V.ttf") format("truetype");
+}
+/*Font Intialize End*/
+/*Main Body Start*/
+body {
+  font-family: "Vermin Vibes V";
+  letter-spacing: 1.5px;
+  background-color: #060D25;
+}
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/*Main Body End*/
+/*Classes to show and hide section on screens start*/
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+/*Classes to show and hide section on screens end*/
+/*validation error msg started*/
+label.error {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+  color: #d87746;
+  margin-top: 6px;
+}
+
+/*Validation Error msg ended*/
+/*Screen Preloader started*/
+#preloader {
+  background: url("../../images/launch/preloader_assets/bg.png");
+  background-repeat: no-repeat;
+  background-color: #060D25;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+}
+#preloader .chain {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+#preloader .chain .content {
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*Screen Preloader Ended*/
+/*Header & Navigation started*/
+header {
+  background: url("../../images/launch/footer/bg.png");
+}
+header .header-bg {
+  background: #00000061;
+}
+header #top_bar .tag-text {
+  font-size: 18px;
+}
+header #top_bar .contact-info {
+  padding-left: 0;
+  display: inline-block;
+  margin-bottom: 0;
+}
+header #top_bar .contact-info li {
+  float: left;
+  margin: 0 5px;
+  list-style: none;
+  color: #fff;
+}
+header #top_bar .contact-info li a {
+  color: unset;
+  text-decoration: none;
+  font-size: 15px;
+}
+header #top_bar .contact-info li a:hover {
+  color: #d87746;
+}
+header #top_bar .contact-info li i {
+  color: #d87746;
+}
+header hr {
+  border-color: #fff;
+  margin: 0;
+}
+header nav {
+  background-color: transparent;
+  padding: 0 !important;
+}
+header nav .navbar-brand {
+  color: #fff;
+}
+header nav .navbar-brand .logo {
+  height: 74px;
+}
+header nav .nav-item .nav-link {
+  color: #fff;
+}
+header nav .nav-item .nav-link:hover {
+  color: #d87746;
+}
+
+/*Header & Navigation Ended*/
+/*Main Content Started*/
+main {
+  background: url("../../images/launch/rsc/skull.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main #slider .carousel-item img {
+  object-fit: cover;
+  height: 685px;
+  width: 100%;
+}
+main #sliderBoxes {
+  margin-top: -150px;
+}
+main #sliderBoxes .slider-box {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  padding: 10px;
+  height: 300px;
+  width: 100%;
+  display: table;
+}
+main #sliderBoxes .slider-box:hover {
+  border-color: #d87746;
+  transform: scale(1.2);
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+main #sliderBoxes .slider-box .box-text {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  font-size: 30px;
+}
+main #sliderBoxes .box-bg-1 {
+  background: url("../../images/launch/Slider/box-bg-1.png");
+  background-size: cover;
+}
+main #sliderBoxes .box-bg-2 {
+  background: url("../../images/launch/Slider/box-bg-2.png");
+  background-size: cover;
+}
+main #sliderBoxes .box-bg-3 {
+  background: url("../../images/launch/Slider/box-bg-3.png");
+  background-size: cover;
+}
+main #sliderBoxes .box-bg-4 {
+  background: url("../../images/launch/Slider/box-bg-4.png");
+  background-size: cover;
+}
+main #about {
+  background: url("../../images/launch/about/chains.png");
+  background-size: cover;
+  padding: 150px 0;
+}
+main #about .info-box {
+  height: 350px;
+  border-radius: 15px;
+  background: #00000087;
+  border: 1px solid;
+  color: #fff;
+}
+main #about .info-box:hover {
+  border-color: #d87746;
+}
+main #about .info-box p {
+  font-size: 17px;
+  font-family: monospace;
+}
+main .blood-bg {
+  background: url("../../images/launch/rsc/redBg2.png");
+  background-size: cover;
+  background-position: top;
+}
+main #gallery {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 100px 0;
+}
+main #gallery .gallery-text {
+  display: table;
+  height: 250px;
+  padding: 50px;
+}
+main #gallery .gallery-text h2 {
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 40px;
+}
+main #gallery img {
+  height: 250px;
+}
+main #gallery img:hover {
+  transform: scale(1.7);
+  -webkit-transition: transform 0.5s ease-in-out;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 9999;
+}
+main #info .info-box img {
+  height: 150px;
+}
+main #info .info-box h4 {
+  color: #d87746;
+}
+main #info .info-box p {
+  font-size: 17px;
+  font-family: monospace;
+}
+main #news {
+  position: relative;
+}
+main #news .row {
+  margin-right: 0;
+}
+main #news .news-box {
+  background-color: black;
+  color: #fff;
+  height: 485px;
+}
+main #news .news-box h5 {
+  color: #d87746;
+}
+main #news .news-box p {
+  font-size: 17px;
+  height: 280px;
+  overflow: hidden;
+  font-family: monospace;
+}
+main #news .news-box .button {
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #d87746;
+  border-radius: 8px;
+  display: block;
+  color: #d87746;
+  text-decoration: unset;
+}
+main #news .news-box .button:hover {
+  background: #d87746;
+  color: #fff;
+}
+main #news .news-box img {
+  width: 100%;
+  height: 100%;
+}
+main #news .news-box img:hover {
+  transform: scale(1.2);
+  -webkit-transition: transform 0.5s ease-in-out;
+  position: absolute;
+  margin: 0;
+  z-index: 9999;
+}
+main #news .news-box.last-img img:hover {
+  transform: scale(1.2);
+  -webkit-transition: transform 0.5s ease-in-out;
+  position: absolute;
+  right: 55px;
+  z-index: 9999;
+}
+main #contact .contact-form {
+  border: 2px solid #d87746;
+  padding: 61px 30px;
+  border-radius: 10px;
+  min-height: 512px;
+}
+main #contact .contact-form .input-group span {
+  background-color: #d87746;
+  color: #fff;
+  width: 42px;
+}
+main #contact .contact-form button {
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #d87746;
+  border-radius: 8px;
+  display: block;
+  color: #d87746;
+  background: transparent;
+}
+main #contact .contact-form button:hover {
+  background: #d87746;
+  color: #fff;
+}
+main #contact img {
+  height: 512px;
+}
+
+/*Main Content Ended*/
+/*Footer Started*/
+footer {
+  background: url("../../images/launch/footer/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+footer .overlay {
+  background: #000000ad;
+}
+footer .about p {
+  font-size: 17px;
+  font-family: monospace;
+}
+footer .about .social-links {
+  padding-left: 0;
+  display: inline-block;
+  list-style: none;
+}
+footer .about .social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+footer .about .social-links li a {
+  background: #d87746;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 13px 0;
+  color: #fFF;
+}
+footer .newsLetter {
+  text-align: center;
+  padding: 50px 0;
+}
+footer .newsLetter button {
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #d87746;
+  border-radius: 8px;
+  display: block;
+  color: #d87746;
+  background: transparent;
+}
+footer .newsLetter button:hover {
+  background: #d87746;
+  color: #fff;
+}
+footer #footerBottom {
+  text-align: center;
+  color: #fff;
+  background-color: #d87746;
+}
+footer #footerBottom a {
+  color: unset;
+  text-decoration: underline;
+}
+
+/*Footer Ended*/
+/* Mobile Screens Responsive Started*/
+@media screen and (max-width: 760px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  header #top_bar .tag-text {
+    font-size: 16px;
+    text-align: center;
+  }
+  header #top_bar .contact-info {
+    width: 100%;
+  }
+  header #top_bar .contact-info li {
+    float: unset;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  header nav .navbar-toggler {
+    background: #d87746;
+    color: #fff;
+    padding: 10px;
+  }
+  header nav .navbar-brand {
+    font-size: 15px;
+  }
+  header nav .navbar-brand .logo {
+    width: 255px;
+    object-fit: contain;
+  }
+
+  main #slider .carousel-item img {
+    height: 200px;
+  }
+  main #sliderBoxes {
+    margin-top: 53px;
+  }
+  main #about {
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+  }
+  main #about .info-box {
+    overflow-y: scroll;
+    padding: 15px !important;
+    margin-bottom: 20px;
+  }
+  main #about .info-box h3 {
+    font-size: 26px;
+    margin-bottom: 10px !important;
+  }
+  main #about .info-box p {
+    font-style: 15px;
+    padding: 0 !important;
+    text-align: justify;
+  }
+  main #gallery {
+    padding: 20px 0;
+  }
+  main #gallery .gallery-text {
+    padding: 0;
+    height: auto;
+  }
+  main #gallery .gallery-text h2 {
+    font-size: 25px;
+    height: 85px;
+  }
+  main #gallery .col-box {
+    height: 150px;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-bottom: 10px;
+  }
+  main #gallery .col-box img {
+    height: 150px;
+  }
+  main #gallery .box-left {
+    padding-right: 5px !important;
+  }
+  main #gallery .box-right {
+    padding-left: 5px !important;
+  }
+  main #news {
+    display: none;
+  }
+  main #contact .contact-form {
+    padding: 20px;
+    height: auto;
+  }
+  main #contact img {
+    display: none;
+  }
+}
+/* Mobile Screens Responsive Ended*/
+/* Ipad Screens Responsive Started*/
+@media screen and (max-width: 860px) and (min-width: 760px) {
+  header #top_bar .tag-text {
+    font-size: 16px;
+    text-align: center;
+  }
+  header #top_bar .contact-info {
+    width: 100%;
+  }
+  header #top_bar .contact-info li {
+    float: unset;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  header nav .navbar-toggler {
+    background: #d87746;
+    color: #fff;
+    padding: 10px;
+  }
+  header nav .navbar-brand {
+    font-size: 15px;
+  }
+
+  main #slider .carousel-item img {
+    height: 350px;
+  }
+  main #sliderBoxes {
+    margin-top: 53px;
+  }
+  main #sliderBoxes .slider-box {
+    height: 200px;
+    width: 100%;
+  }
+  main #sliderBoxes .slider-box .box-text {
+    font-size: 21px;
+  }
+  main #about {
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+  }
+  main #about .info-box {
+    overflow-y: scroll;
+    height: 212px;
+    padding: 15px !important;
+    margin-bottom: 20px;
+  }
+  main #about .info-box h3 {
+    font-size: 26px;
+    margin-bottom: 10px !important;
+  }
+  main #about .info-box p {
+    font-style: 15px;
+    padding: 0 !important;
+    text-align: justify;
+  }
+  main #gallery {
+    padding: 20px 0;
+  }
+  main #gallery .gallery-text {
+    padding: 0;
+    height: 150px;
+  }
+  main #gallery .gallery-text h2 {
+    font-size: 25px;
+    height: 85px;
+  }
+  main #gallery .col-box {
+    height: 150px;
+  }
+  main #gallery .col-box img {
+    height: 150px;
+  }
+  main #news {
+    display: none;
+  }
+  main #contact .contact-form {
+    padding: 15px;
+    height: auto;
+  }
+  main #contact img {
+    height: 429px;
+  }
+}
+/* Ipad Responsive Ended*/
+/* Ipad Pro Responsive Started*/
+@media screen and (max-width: 1050px) and (min-width: 860px) {
+  header #top_bar .tag-text {
+    font-size: 16px;
+  }
+  header #top_bar .contact-info {
+    width: 100%;
+  }
+  header #top_bar .contact-info li {
+    font-size: 15px;
+  }
+
+  main #slider .carousel-item img {
+    height: 400px;
+  }
+  main #about {
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+  }
+  main #about .info-box {
+    overflow-y: scroll;
+    height: 289px;
+    padding: 15px !important;
+  }
+  main #about .info-box h3 {
+    font-size: 26px;
+    margin-bottom: 10px !important;
+  }
+  main #about .info-box p {
+    font-style: 15px;
+    padding: 0 !important;
+    text-align: justify;
+  }
+  main #gallery {
+    padding: 20px 0;
+  }
+  main #news {
+    display: none;
+  }
+  main #contact .contact-form {
+    padding: 15px;
+    height: auto;
+  }
+  main #contact img {
+    height: 429px;
+  }
+}
+/* Ipad Pro Responsive Ended*/
+
+/*# sourceMappingURL=launch.css.map */

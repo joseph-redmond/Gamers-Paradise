@@ -1,0 +1,1600 @@
+/*Font Intialize Start*/
+@font-face {
+  font-family: "Evil Empire";
+  src: local("Evil Empire"), url("/fonts/Evil Empire/Evil Empire.woff") format("woff");
+}
+@font-face {
+  font-family: "POE-Redcoat-New";
+  src: url("/fonts/POE-Redcoat-New/POE-Redcoat-New.ttf.woff") format("woff"), url("../../fonts/POE-Redcoat-New/POE-Redcoat-New.ttf.svg#POE-Redcoat-New") format("svg"), url("../../fonts/POE-Redcoat-New/POE-Redcoat-New.ttf.eot"), url("../../fonts/POE-Redcoat-New/POE-Redcoat-New.ttf.eot?#iefix") format("embedded-opentype");
+}
+/*Font Intialize End*/
+/*Main Body Start*/
+body {
+  font-family: "Evil Empire";
+  background-color: #09080C;
+}
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/*Main Body End*/
+/* A Tag default styling Started*/
+a {
+  color: unset;
+  text-decoration: none;
+}
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+/* A Tag default styling Ended*/
+/*button*/
+.button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #60CC02;
+}
+.button:hover {
+  background: #60CC02;
+  color: #fff;
+}
+
+/*bg  button*/
+.flayer-button {
+  background: url("/images/register/btn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 140px;
+  height: 61px;
+  border: 0;
+  padding: 0px 22px;
+  color: #fff;
+  font-size: 20px;
+  text-align: left;
+}
+
+/*preloader*/
+#preloader {
+  background: url("/images/comp/preloader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+}
+
+/*header*/
+header {
+  padding: 10px 0;
+}
+header .logo {
+  color: #fff;
+}
+header .logo img {
+  width: 300px;
+  object-fit: contain;
+}
+header nav.navbar {
+  padding: 35px 0;
+}
+header nav .nav-item .nav-link {
+  color: #fff;
+  letter-spacing: 1px;
+}
+header nav .nav-item .nav-link:hover {
+  background-color: #60CC02;
+  color: #fff;
+}
+header nav .nav-item.active .nav-link {
+  background-color: #60CC02;
+  color: #fff;
+}
+header .buttons {
+  padding: 35px 0;
+}
+
+/*slider*/
+#slider {
+  background: url("/images/slider/slider.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#slider .main-img {
+  width: 100%;
+  height: 670px;
+  object-fit: cover;
+}
+#slider .slider-content {
+  position: relative;
+  width: 100%;
+}
+#slider .slider-content .main-img {
+  width: 50%;
+  height: 670px;
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  top: 0;
+}
+#slider .slider-content .text {
+  margin: 200px 0 0 0;
+}
+#slider .slider-content .text h1 {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+#slider .slider-content .text h4 {
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+  color: #60CC02;
+}
+#slider .slider-content .text p {
+  font-family: "POE-Redcoat-New";
+  color: #fff;
+  letter-spacing: 2px;
+}
+#slider .slider-content .text .register-button img {
+  width: 170px;
+}
+
+/*Support*/
+#support {
+  text-align: center;
+  padding: 30px 0;
+}
+#support img {
+  width: 110px;
+  object-fit: contain;
+  height: 100px;
+}
+
+/*Main*/
+main {
+  background: url("/images/comp/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Default*/
+.heading {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/*latest Games*/
+#games {
+  padding: 50px 0;
+}
+#games img {
+  width: 100%;
+  height: 195px;
+}
+#games .description {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  padding: 10px 30px;
+  color: #fff;
+  background: #0b0f0ec7;
+}
+#games .description:hover {
+  color: #fff;
+  background: #60CC02;
+}
+
+/*latest Tournaments*/
+#tournaments {
+  padding: 30px 0;
+}
+#tournaments .trn-box {
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 50px;
+  position: relative;
+}
+#tournaments .trn-box:hover h4 {
+  color: #60CC02;
+}
+#tournaments .trn-box .play-icon {
+  position: absolute;
+  bottom: -18px;
+}
+#tournaments .trn-box .play-icon img {
+  width: 70px;
+  height: 70px;
+}
+#tournaments .trn-box:before {
+  content: "";
+  height: 80%;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  background-color: #2a2a2c;
+}
+#tournaments .trn-box:after {
+  content: "";
+  height: 2px;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  background-color: #2a2a2c;
+}
+#tournaments .trn-box.left:before {
+  right: 0;
+}
+#tournaments .trn-box.left:after {
+  left: 0;
+}
+#tournaments .trn-box.left .play-icon {
+  right: 11px;
+}
+#tournaments .trn-box.left h4 span {
+  padding: 0 20px 0 0;
+}
+#tournaments .trn-box.right:before {
+  left: 0;
+}
+#tournaments .trn-box.right:after {
+  right: 0;
+}
+#tournaments .trn-box.right .play-icon {
+  left: 11px;
+}
+#tournaments .trn-box.right h4 span {
+  padding: 0 0 0 20px;
+}
+#tournaments .trn-box .game-logo {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+}
+#tournaments .trn-box h4 {
+  font-size: 33px;
+}
+#tournaments .trn-box h4 span {
+  font-size: 16px;
+}
+#tournaments .trn-box h4 span small {
+  font-size: 16px;
+  color: #2a2a2c;
+}
+#tournaments .trn-box .cat {
+  color: #2a2a2c;
+}
+#tournaments .trn-box .users {
+  color: #60CC02;
+  font-size: 19px;
+}
+
+/*create*/
+#create {
+  position: relative;
+  margin: 80px 0;
+}
+#create .bg-color {
+  height: 300px;
+  background: #27252975;
+}
+#create .box {
+  background: url("/images/createTrmt/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  margin-top: -60px;
+  border-radius: 10px;
+  box-shadow: 12px 13px 85px 36px #000;
+  padding: 20px;
+}
+#create .box .text {
+  color: #fff;
+  padding: 40px 0;
+}
+#create .box .text h3 {
+  font-size: 35px;
+}
+#create .box .text p {
+  font-family: "POE-Redcoat-New";
+  font-weight: normal;
+}
+#create .box .text hr {
+  width: 50%;
+  border-width: 2px;
+  border-color: #fff;
+  margin: 30px 0;
+}
+#create .box .text .create-button {
+  background: url("/images/createTrmt/btn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  display: block;
+  width: 161px;
+  height: 70px;
+}
+#create .box .character-img {
+  width: 100%;
+  position: absolute;
+  right: 20px;
+  top: -55px;
+}
+
+/*stream*/
+#stream {
+  padding: 30px 0;
+}
+#stream .main-img {
+  background: url("/images/stream/featuredStream.png");
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+}
+#stream .main-img .overlay {
+  background: #2a2a2c7a;
+  width: 100%;
+  height: 100%;
+  padding: 200px 0;
+}
+#stream .main-img button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #0000009e;
+  color: #ffff;
+  text-align: center;
+  font-size: 45px;
+  padding: 0 0 0 10px;
+  color: #60CC02;
+}
+
+/*Stream Modal*/
+.modal .modal-dialog {
+  max-width: 40%;
+}
+.modal .modal-content {
+  background-color: #09080C;
+  color: #fff;
+}
+.modal .modal-content .modal-header {
+  border-color: #60CC02;
+}
+.modal .modal-content .modal-header button {
+  color: red;
+  font-size: 42px;
+}
+.modal .modal-content .modal-footer {
+  border-color: #60CC02;
+}
+.modal .modal-content .modal-footer .btn {
+  background-color: #710c0c;
+  color: #fff;
+}
+
+/*Top Teams*/
+#teams {
+  padding: 30px 0;
+}
+#teams .team-box {
+  padding: 20px;
+  border: 2px solid #575357;
+  border-radius: 10px;
+  background-color: #57535759;
+  margin-bottom: 20px;
+  position: relative;
+}
+#teams .team-box h3 {
+  font-size: 35px;
+  color: #fff;
+  padding: 34px 0;
+}
+#teams .team-box .points {
+  padding: 34px 0;
+  font-size: 35px;
+  color: #fff;
+}
+#teams .team-box .points small {
+  color: #60CC02;
+  font-family: "POE-Redcoat-New";
+  font-size: 20px;
+}
+#teams .team-box .team-logo {
+  width: 100%;
+  object-fit: contain;
+  height: 120px;
+}
+#teams .team-box .medal-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  position: absolute;
+  top: -20px;
+}
+
+/*blogs*/
+#blogs {
+  padding: 30px 0;
+}
+#blogs .blog-box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+#blogs .blog-box.bg-1 {
+  height: 430px;
+  background: url("/images/blog/img1.png");
+  background-position: top right;
+}
+#blogs .blog-box.bg-2 {
+  height: 200px;
+  background: url("/images/blog/img2.png");
+}
+#blogs .blog-box.bg-3 {
+  height: 200px;
+  background: url("/images/blog/img3.png");
+}
+#blogs .blog-box.bg-4 {
+  height: 200px;
+  background: url("/images/blog/img4.png");
+}
+#blogs .blog-box.bg-5 {
+  height: 200px;
+  background: url("/images/blog/img5.png");
+}
+#blogs .blog-box .content {
+  background: #0000008a;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}
+#blogs .blog-box .content .bottom {
+  position: absolute;
+  bottom: 50px;
+}
+#blogs .blog-box .content hr {
+  width: 50%;
+  border-color: #fff;
+  margin: 10px 0;
+}
+#blogs .blog-box .content p {
+  color: #60CC02;
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+}
+#blogs .blog-box .content .blog-button {
+  background: url("/images/blog/btn1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 135px;
+  height: 56px;
+  padding: 16px 14px;
+}
+
+/*join*/
+#join {
+  margin: 30px 0 0 0;
+  background: url("/images/join/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#join .green-bg {
+  background: url("/images/join/green-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+}
+#join .content-center {
+  display: table;
+  text-align: center;
+  width: 50%;
+  height: 600px;
+  margin: 0 auto;
+}
+#join .content-center .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+#join .content-center .content h3 {
+  font-size: 45px;
+  margin-top: 120px;
+  color: #fff;
+}
+#join .content-center .content hr {
+  border-color: #fff;
+  width: 50%;
+  border-width: 2px;
+}
+#join .content-center .content p {
+  color: #fff;
+  font-family: "POE-Redcoat-New";
+}
+#join .content-center .content .register-button img {
+  width: 180px;
+}
+
+/*footer*/
+footer {
+  background: url("/images/footer/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+footer .logo {
+  color: #fff;
+}
+footer .logo img {
+  height: 80px;
+}
+footer .about p {
+  color: #fff;
+  font-family: "POE-Redcoat-New";
+  padding: 10px 0;
+}
+footer .social {
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+  color: #fff;
+  width: 100%;
+}
+footer .social li {
+  float: left;
+  width: 12%;
+}
+footer .social li:hover {
+  color: #60CC02;
+}
+footer .links-heading {
+  color: #60CC02;
+  position: relative;
+  margin-bottom: 20px;
+}
+footer .links-heading:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100px;
+  height: 2px;
+  background-color: #60CC02;
+}
+footer .links {
+  padding: 0;
+  list-style: none;
+}
+footer .links li a {
+  padding: 10px 2px;
+  display: block;
+  color: #fff;
+}
+footer .links li a:hover {
+  color: #60CC02;
+}
+footer .tournamtents .box {
+  padding: 20px 40px;
+  border: 2px solid #575357;
+  border-radius: 10px;
+  background-color: #57535759;
+  color: #fff;
+}
+footer .tournamtents .box h5 {
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+footer .tournamtents .box img {
+  width: 100%;
+}
+footer .tournamtents .box .cat {
+  color: #575357;
+}
+footer .tournamtents .box .users {
+  color: #60CC02;
+  text-align: center;
+  margin-bottom: 5px;
+}
+footer .tournamtents .box .start {
+  color: #575357;
+  text-align: center;
+  margin-bottom: 5px;
+}
+footer .tournamtents .box .date {
+  text-align: center;
+  margin-bottom: 0;
+}
+footer .tournamtents .arrow {
+  margin-top: 120px;
+}
+footer .tournamtents .next {
+  transform: rotate(180deg);
+}
+
+/*Copy Right*/
+.copyright {
+  padding: 20px;
+  background-color: #09080C;
+  color: #fff;
+  text-align: center;
+}
+
+/*Classes to show and hide section on screens start*/
+.show-on-dekstop {
+  display: block;
+}
+
+.show-on-mobile {
+  display: none;
+}
+
+/*Classes to show and hide section on screens end*/
+/*login*/
+#login {
+  padding: 30px 0;
+  color: #fff;
+}
+#login form {
+  background: url("/images/login/form-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+#login form .form-heading {
+  font-size: 35px;
+  border-bottom: 2px solid #36501E;
+  padding-bottom: 15px;
+}
+#login form .form-heading .sign-up {
+  font-size: 18px;
+}
+#login form .form-heading .sign-up p {
+  color: #36501E;
+}
+#login form .form-heading .sign-up a {
+  color: #60CC02;
+  font-weight: bold;
+}
+#login form .social-buttons a {
+  margin: 20px 0;
+  display: block;
+  border: 1px solid #60CC02;
+  border-radius: 5px;
+}
+#login form .social-buttons a:hover i {
+  background: #36501E;
+  color: #60CC02;
+}
+#login form .social-buttons a:hover span {
+  background: #60CC02;
+  color: #fff;
+}
+#login form .social-buttons a i {
+  background-color: #60CC02;
+  padding: 10px;
+  width: 20%;
+  display: inline-block;
+  float: left;
+  font-weight: bold;
+  color: #36501E;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#login form .social-buttons a span {
+  float: left;
+  width: 80%;
+  display: inline-block;
+  background: #36501E;
+  padding: 6px 10px;
+  color: #60CC02;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#login form label {
+  color: #3E8202;
+}
+#login form label .forget-pwd {
+  color: #60CC02;
+}
+#login form input {
+  font-family: "POE-Redcoat-New";
+  border-color: #60CC02;
+  background-color: transparent;
+  color: #fff;
+}
+#login form textarea {
+  font-family: "POE-Redcoat-New";
+  border-color: #60CC02;
+  background-color: transparent;
+  color: #fff;
+}
+#login .login-img {
+  height: 600px;
+  width: 100%;
+  object-fit: contain;
+  object-position: right;
+}
+#login .contact-detail h3 {
+  color: #60CC02;
+  border-bottom: 2px solid #60CC02;
+}
+#login .contact-detail p {
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+}
+#login .contact-detail ul {
+  padding: 0;
+  list-style: none;
+}
+#login .contact-detail ul li i {
+  color: #60CC02;
+  width: 30px;
+  padding: 10px 0;
+}
+
+/*page-heading*/
+#page-heading {
+  padding: 20px 0;
+  background-color: #2a2a2c63;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+#page-heading .content {
+  padding: 50px 0;
+  color: #fff;
+}
+#page-heading .content h1 {
+  color: #60CC02;
+  border-bottom: 2px solid #60CC02;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#page-heading .content input {
+  font-family: "POE-Redcoat-New";
+  border-color: #60CC02;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0;
+  height: 46px;
+}
+#page-heading .content p {
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+}
+#page-heading .img-border {
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #60CC02;
+  height: 350px;
+  padding: 13px;
+}
+#page-heading .img-border .img-bg {
+  background-color: #60CC02;
+  width: 320px;
+  border-radius: 50%;
+  height: 320px;
+  text-align: center;
+}
+#page-heading .img-border .img-bg img {
+  height: 400px;
+  margin-top: -30px;
+  box-shadow: 11px 22px 80px black;
+}
+
+/*siderBar*/
+.siderBar .box .box-heading {
+  color: #60CC02;
+  display: inline-block;
+  border-bottom: 2px solid #60CC02;
+}
+.siderBar .box .post-box {
+  padding: 10px;
+  border: 2px solid #575357;
+  border-radius: 10px;
+  background-color: #57535759;
+  color: #fff;
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.siderBar .box .links {
+  padding: 0;
+  list-style: none;
+}
+.siderBar .box .links .team-box {
+  border: 2px solid #575357;
+  border-radius: 10px;
+  background-color: #57535759;
+  padding: 10px;
+  color: #fff;
+  height: 70px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.siderBar .box .links .team-box .medal-img {
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.siderBar .box .links .team-box .points {
+  padding: 0;
+  color: #fff;
+}
+.siderBar .box .links .team-box .points small {
+  color: #60CC02;
+  font-family: "POE-Redcoat-New";
+}
+
+/*pagination*/
+.pagination .page-item a {
+  background-color: #252727;
+  color: #60cc02;
+  padding: 10px 20px;
+  border-color: #575357;
+}
+.pagination .page-item.active a {
+  background-color: #60CC02;
+  color: #fff;
+  border-color: transparent;
+}
+
+/*featured-product*/
+#featured-product {
+  padding: 20px 0;
+  background-color: #2a2a2c63;
+}
+#featured-product .content {
+  padding: 20px 0;
+}
+#featured-product .content h1 {
+  color: #fff;
+}
+#featured-product .content p {
+  color: #60CC02;
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+}
+#featured-product .content .price {
+  font-size: 18px;
+  color: #60CC02;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 2px solid #2a2a2c;
+}
+#featured-product .content .color {
+  color: #60CC02;
+}
+#featured-product .content .red-color {
+  width: 22px;
+  display: inline-block;
+  height: 20px;
+  background-color: #E62A1E;
+  /* margin: 12px; */
+  margin: 0 9px;
+  border-radius: 2px;
+}
+#featured-product .content .yellow-color {
+  width: 22px;
+  display: inline-block;
+  height: 20px;
+  background-color: #FEE500;
+  /* margin: 12px; */
+  margin: 0 5px;
+  border-radius: 2px;
+}
+#featured-product .content .blue-color {
+  width: 22px;
+  display: inline-block;
+  height: 20px;
+  background-color: #1EB3E6;
+  /* margin: 12px; */
+  margin: 0 9px;
+  border-radius: 2px;
+}
+#featured-product .content .buy-buttons a {
+  padding: 10px;
+  padding: 15px;
+}
+#featured-product .content .preview-images {
+  padding: 10px 30px;
+}
+#featured-product .content .preview-images:after {
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  height: 50px;
+  content: "";
+  left: 0;
+  background-color: #2a2a2cc7;
+}
+#featured-product .img-bg {
+  background: url("/images/shop/slider/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 360px;
+  height: 351px;
+  margin: 0 auto;
+}
+#featured-product .img-bg img {
+  width: 100%;
+  object-fit: contain;
+  height: 350px;
+}
+
+/*shopGames*/
+#shopGames {
+  padding: 30px 0;
+}
+#shopGames .owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #869791;
+  font-size: 40px;
+  line-height: 450px;
+  margin: 0;
+  padding: 0 60px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+}
+#shopGames .owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: -65px;
+  padding-left: 20px;
+}
+#shopGames .owl-theme .owl-controls .owl-buttons .owl-prev span {
+  background: url("/images/shop/comp/arrow.png");
+  background-size: contain;
+  height: 38px;
+  background-repeat: no-repeat;
+}
+#shopGames .owl-theme .owl-controls .owl-buttons .owl-next {
+  right: -65px;
+  padding-right: 20px;
+}
+#shopGames .owl-theme .owl-controls .owl-buttons .owl-next .arrow-right {
+  transform: rotate(185deg);
+  background: url("/images/shop/comp/arrow.png");
+  background-size: contain;
+  height: 38px;
+  background-repeat: no-repeat;
+}
+#shopGames .owl-carousel .game-slide {
+  margin: 0 20px;
+}
+#shopGames .game-slide .game-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+#shopGames .game-slide .game-content {
+  background: #2a2a2c;
+  padding: 20px;
+  position: relative;
+}
+#shopGames .game-slide .game-content .rating-stars i {
+  color: #60CC02;
+}
+#shopGames .game-slide .game-content .price {
+  float: right;
+  color: #60CC02;
+  font-size: 25px;
+}
+#shopGames .game-slide .game-content .game-title {
+  color: #fff;
+  letter-spacing: 5px;
+}
+#shopGames .game-slide .game-content .game-title:hover {
+  color: #60CC02;
+}
+#shopGames .game-slide .game-content .game-description {
+  color: #fff;
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+#shopGames .game-slide .game-content .game-bar {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  list-style: none;
+}
+#shopGames .game-slide .game-content .game-bar li {
+  float: left;
+  width: 50%;
+  font-size: 13px;
+  color: #fff;
+}
+#shopGames .game-slide .game-content .game-bar li i {
+  color: #60CC02;
+}
+#shopGames .game-slide .game-content .buy-now {
+  padding: 15px 18px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/*products*/
+#products {
+  padding: 30px 0;
+}
+#products .owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #869791;
+  font-size: 40px;
+  line-height: 215px;
+  margin: 0;
+  padding: 0 60px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+}
+#products .owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: -65px;
+  padding-left: 20px;
+}
+#products .owl-theme .owl-controls .owl-buttons .owl-prev span {
+  background: url("/images/shop/comp/arrow.png");
+  background-size: contain;
+  height: 38px;
+  background-repeat: no-repeat;
+}
+#products .owl-theme .owl-controls .owl-buttons .owl-next {
+  right: -65px;
+  padding-right: 20px;
+}
+#products .owl-theme .owl-controls .owl-buttons .owl-next .arrow-right {
+  transform: rotate(185deg);
+  background: url("/images/shop/comp/arrow.png");
+  background-size: contain;
+  height: 38px;
+  background-repeat: no-repeat;
+}
+#products .product-box {
+  margin: 0 20px;
+  position: relative;
+}
+#products .product-box img {
+  width: 100%;
+  height: 250px;
+}
+#products .product-box .description {
+  position: absolute;
+  bottom: 0;
+  width: 88%;
+  left: 0;
+  margin: 0 20px;
+}
+#products .product-box .description p {
+  color: #60CC02;
+}
+#products .product-box .description p .price {
+  float: right;
+}
+
+/*offer*/
+#offer {
+  padding: 30px 0;
+}
+#offer .detail {
+  text-align: center;
+  padding: 100px 50px;
+}
+#offer .detail h2 {
+  color: #fff;
+}
+#offer .detail p {
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+  color: #60CC02;
+}
+#offer .detail .red-color {
+  width: 22px;
+  display: inline-block;
+  height: 20px;
+  background-color: #E62A1E;
+  /* margin: 12px; */
+  margin: 0 9px;
+  border-radius: 2px;
+}
+#offer .detail .yellow-color {
+  width: 22px;
+  display: inline-block;
+  height: 20px;
+  background-color: #FEE500;
+  /* margin: 12px; */
+  margin: 0 5px;
+  border-radius: 2px;
+}
+#offer .detail .blue-color {
+  width: 22px;
+  display: inline-block;
+  height: 20px;
+  background-color: #1EB3E6;
+  /* margin: 12px; */
+  margin: 0 9px;
+  border-radius: 2px;
+}
+#offer .detail .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #60CC02;
+}
+#offer img {
+  width: 100%;
+  height: 400px;
+}
+
+/*forums*/
+#forums {
+  padding: 30px 0;
+  color: #fff;
+}
+#forums table {
+  border: 1px solid #575357;
+}
+#forums table thead {
+  background-color: #2a2a2c;
+  border-color: #575357;
+}
+#forums table tr:nth-child(even) td {
+  background-color: #2a2a2c;
+}
+#forums table tr th {
+  border-color: #575357;
+  color: #fff;
+}
+#forums table tr td {
+  border-color: #575357;
+  color: #fff;
+}
+#forums table tr td img {
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+}
+#forums table tr td .title {
+  color: #60CC02;
+}
+#forums table tr td i {
+  color: #60CC02;
+}
+
+/*cart*/
+#cart {
+  padding: 30px 0;
+}
+#cart .discount {
+  padding: 20px 10px;
+  border: 2px solid #575357;
+  border-radius: 10px;
+  background-color: #57535759;
+}
+#cart .discount h2 {
+  color: #60CC02;
+}
+#cart .discount p {
+  color: #fff;
+  margin-bottom: 0;
+}
+#cart .item {
+  padding: 10px;
+  border: 2px solid #575357;
+  border-radius: 10px;
+  background-color: #57535759;
+  margin-bottom: 20px;
+}
+#cart .item img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+#cart .item h3 {
+  color: #fff;
+}
+#cart .item .price {
+  color: #60CC02;
+  font-size: 22px;
+}
+#cart .summary {
+  border: 2px solid #575357;
+  border-radius: 10px;
+  background-color: #57535759;
+  padding: 20px;
+  color: #fff;
+}
+#cart .summary h3 {
+  text-align: center;
+}
+#cart .summary hr {
+  border-color: #fff;
+  width: 50%;
+  margin: 20px auto;
+}
+#cart .summary input {
+  background-color: transparent;
+  border-color: #60CC02;
+  color: #fff;
+}
+#cart .summary span {
+  color: #60CC02;
+}
+#cart .summary .checkout-btn {
+  background-color: #60CC02;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+#cart .summary .paypal-btn {
+  background-color: #fff;
+  color: #0b0e0e;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+#cart .summary .paypal-btn i {
+  color: #60CC02;
+}
+
+/*blog Detail*/
+#blog-detail {
+  padding: 20px 0;
+}
+#blog-detail .main-img {
+  width: 100%;
+  border: 1px solid #575357;
+  border-radius: 8px;
+}
+#blog-detail .detail {
+  border: 2px solid #575357;
+  border-radius: 10px;
+  background-color: #57535759;
+  color: #fff;
+  padding: 20px;
+  margin: 30px 0;
+  font-family: "POE-Redcoat-New";
+  letter-spacing: 2px;
+}
+#blog-detail .detail img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Mobile Screens Responsive Started*/
+@media screen and (max-width: 760px) {
+  .show-on-dekstop {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+
+  .navbar-toggler {
+    color: #fff;
+  }
+
+  header .logo img {
+    width: 250px;
+  }
+  header nav .nav-item.active .nav-link {
+    padding: 10px;
+  }
+
+  .modal .modal-dialog {
+    max-width: 100%;
+  }
+
+  .navbar-collapse {
+    width: 200px;
+    background: black;
+    padding: 10px;
+    position: absolute;
+    top: 90%;
+    z-index: 99;
+  }
+
+  #slider {
+    height: 400px;
+  }
+  #slider .slider-content .text {
+    margin: 0;
+  }
+  #slider .slider-content .main-img {
+    display: none;
+  }
+
+  #games {
+    padding: 30px 0 0 0;
+  }
+  #games img {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #games .description {
+    bottom: 20px;
+  }
+
+  #tournaments .trn-box:after {
+    width: 65%;
+  }
+
+  #create {
+    margin: 50px 0 0 0;
+  }
+  #create .bg-color {
+    height: unset;
+  }
+  #create .box {
+    height: 420px;
+  }
+  #create .box .text {
+    padding: 10px 0;
+  }
+  #create .box .character-img {
+    right: -7px;
+    top: -65px;
+    width: 111px;
+  }
+
+  #stream .main-img {
+    height: 220px;
+  }
+  #stream .main-img .overlay {
+    padding: 60px 0;
+  }
+
+  #teams .team-box .points {
+    padding: 0;
+  }
+  #teams .team-box .medal-img {
+    right: 0;
+  }
+
+  #join {
+    margin: 0;
+    background-position: center;
+  }
+  #join .green-bg {
+    background-position: center;
+  }
+  #join .content-center {
+    width: 100%;
+    padding: 20px 0;
+    height: auto;
+  }
+  #join .content-center .content h3 {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  #join .content-center .content .register-button img {
+    width: 150px;
+  }
+
+  #login {
+    padding: 0;
+  }
+  #login form .social-buttons a i {
+    width: 30%;
+    height: 60px;
+    padding: 21px 0;
+  }
+  #login form .social-buttons a span {
+    width: 70%;
+  }
+
+  #featured-product .content .preview-images:after {
+    width: 100%;
+  }
+
+  #shopGames .owl-carousel .game-slide {
+    margin: 0;
+  }
+  #shopGames .owl-carousel .owl-buttons {
+    display: none;
+  }
+
+  #products .owl-carousel .owl-buttons {
+    display: none;
+  }
+  #products .product-box {
+    margin: 0;
+  }
+
+  #offer .detail {
+    padding: 0;
+  }
+  #offer img {
+    height: auto;
+  }
+}
+/* Mobile Screens Responsive Ended*/
+/* Ipad Screens Responsive Started*/
+@media screen and (max-width: 860px) and (min-width: 760px) {
+  .navbar-toggler {
+    color: #fff;
+  }
+
+  header nav .nav-item.active .nav-link {
+    padding: 10px;
+  }
+  header .buttons {
+    display: none;
+  }
+  header .logo {
+    text-align: right;
+  }
+
+  .navbar-collapse {
+    width: 200px;
+    background: black;
+    padding: 10px;
+    position: absolute;
+    top: 90%;
+    z-index: 99;
+  }
+
+  #slider {
+    height: 430px;
+  }
+  #slider .slider-content .text {
+    margin: 20px 0 0 0;
+  }
+  #slider .slider-content .text h1 {
+    font-size: 32px;
+  }
+  #slider .slider-content .main-img {
+    height: 290px;
+  }
+
+  #games {
+    padding: 30px 0 0 0;
+  }
+  #games img {
+    height: 130px;
+    margin-bottom: 20px;
+  }
+  #games .description {
+    bottom: 20px;
+    font-size: 12px;
+  }
+
+  #tournaments .trn-box h4 {
+    font-size: 23px;
+  }
+  #tournaments .trn-box h4 span {
+    font-size: 10px;
+  }
+  #tournaments .trn-box:after {
+    width: 65%;
+  }
+
+  #create {
+    margin: 50px 0 0 0;
+  }butt 
+  #create .bg-color {
+    height: unset;butt 
+  }
+  #create .box {
+    height: 420px;
+  }
+  #create .box .text {
+    padding: 10px 0;
+  }
+  #create .box .character-img {
+    right: -7px;
+    top: -65px;
+    width: 111px;
+  }
+
+  #stream .main-img {
+    height: 220px;
+  }
+  #stream .main-img .overlay {
+    padding: 60px 0;
+  }
+
+  #teams .team-box .points {
+    padding: 0;
+  }
+  #teams .team-box .medal-img {
+    right: 0;
+  }
+
+  #join {
+    margin: 0;
+    background-position: center;
+  }
+  #join .green-bg {
+    background-position: center;
+  }
+  #join .content-center {
+    width: 100%;
+    padding: 20px 0;
+    height: auto;
+  }
+  #join .content-center .content h3 {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  #join .content-center .content .register-button img {
+    width: 150px;
+  }
+
+  #login {
+    padding: 0;
+  }
+  #login form .social-buttons a i {
+    width: 30%;
+    height: 60px;
+    padding: 21px 0;
+  }
+  #login form .social-buttons a span {
+    width: 70%;
+  }
+
+  #featured-product .content .preview-images:after {
+    width: 100%;
+  }
+
+  #shopGames .owl-carousel .game-slide {
+    margin: 0;
+  }
+  #shopGames .owl-carousel .owl-buttons {
+    display: none;
+  }
+
+  #products .owl-carousel .owl-buttons {
+    display: none;
+  }
+  #products .product-box {
+    margin: 0;
+  }
+
+  #offer .detail {
+    padding: 0;
+  }
+  #offer img {
+    height: auto;
+  }
+}
+/* Ipad Responsive Ended*/
+/* Ipad Pro Responsive Started*/
+@media screen and (max-width: 1050px) and (min-width: 860px) {
+  header nav .nav-item .nav-link {
+    font-size: 14px;
+  }
+  header .logo img {
+    width: 250px;
+  }
+
+  #slider {
+    height: 500px;
+  }
+  #slider .slider-content .text {
+    margin: 50px 0 0 0;
+  }
+  #slider .slider-content .main-img {
+    height: 370px;
+  }
+}
+/* Ipad Pro Responsive Ended*/
+
+/*# sourceMappingURL=community.css.map */

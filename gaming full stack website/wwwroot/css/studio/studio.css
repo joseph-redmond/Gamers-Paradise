@@ -1,0 +1,1214 @@
+/*Font Intialize Start*/
+@font-face {
+  font-family: "Machine Gunk";
+  src: url("../../fonts/machineGunk/Machine-Gunk1.ttf.eot?#") format("embedded-opentype"), url("../../fonts/machineGunk/Machine-Gunk1.ttf.woff") format("woff");
+}
+@font-face {
+  font-family: "Neuropol X";
+  src: url("../../fonts/neuropolX/neuropol-x.woff") format("woff");
+}
+/*Font Intialize End*/
+/*Main Body Start*/
+body {
+  font-family: "Machine Gunk";
+  letter-spacing: 1.5px;
+}
+
+/*Main Body End*/
+/* A Tag default styling Started*/
+a {
+  text-decoration: none;
+  color: unset;
+}
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+/* A Tag default styling Ended*/
+/*validation error msg started*/
+label.error {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+  color: #FFAB00;
+  width: 100%;
+  position: absolute;
+  bottom: -18px;
+  font-size: 12px;
+}
+
+/*Validation Error msg ended*/
+/*Screen Preloader started*/
+#preloader {
+  background: url("../../images/studio/preloader/preloader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+}
+
+/*Screen Preloader Ended*/
+/*Header & Navigation started*/
+header .left {
+  background-color: #1F1E1E;
+  width: 70%;
+  float: left;
+  padding: 5px 20px 5px 65px;
+}
+header .left nav {
+  padding: 0;
+  overflow: hidden;
+}
+header .left nav .nav-item {
+  padding: 0px 5px;
+}
+header .left nav .nav-item .nav-link {
+  color: #fff;
+  font-family: "Neuropol X";
+  text-transform: capitalize;
+}
+header .left nav .nav-item .nav-link:hover {
+  color: #FFAB00;
+}
+header .left .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+}
+header .right {
+  width: 30%;
+  float: right;
+  height: 88px;
+  padding: 13px 10px;
+  background-color: #151515;
+}
+header .right .socialicons {
+  padding-left: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 186px;
+  list-style: none;
+}
+header .right .socialicons li {
+  float: left;
+  display: table;
+  width: 60px;
+  height: 60px;
+  background: url("../../images/studio/social/social-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .right .socialicons li a {
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+header .right .socialicons li a:hover {
+  color: #FFAB00;
+}
+
+/*Header & Navigation Ended*/
+/*Main Content Started*/
+main #slider {
+  background: url("../../images/studio/slider/bg-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #151515;
+  height: 550px;
+  padding: 60px 140px;
+}
+main #slider h1 {
+  color: #fff;
+  width: 450px;
+  display: flex;
+  font-size: 55px;
+  margin: 0 auto 50px auto;
+}
+main #slider h1 img {
+  margin: 20px;
+  height: 90px;
+}
+main #slider span {
+  position: absolute;
+  left: -110px;
+  top: 23%;
+  font-family: "Neuropol X";
+  color: #fff;
+  transform: rotate(90deg);
+}
+main #slider span strong {
+  color: #FFAB00;
+  font-size: 35px;
+}
+main #slider p {
+  font-family: "Neuropol X";
+  color: #fff;
+  height: 140px;
+  overflow: hidden;
+}
+main #slider .main-img {
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  margin-top: -90px;
+}
+main .bg-img {
+  background: url("../../images/studio/components/bg@2x.png");
+  background-size: contain;
+  background-color: #151515;
+}
+
+/*Main Content Ended*/
+/*Page Title Started*/
+.page-title {
+  background-color: #151515;
+  padding: 50px 0 20px 0;
+}
+
+/*Page Title Ended*/
+/*dark bg*/
+.bg-dark {
+  background: #2d2c2c !important;
+}
+
+/*Heading Common Started*/
+.heading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.heading h3 {
+  font-size: 45px;
+  position: relative;
+  display: inline-block;
+}
+.heading h3 .right {
+  position: absolute;
+  height: 64px;
+  right: -20px;
+}
+.heading h3 .left {
+  position: absolute;
+  height: 64px;
+  left: -20px;
+  transform: rotate(90deg);
+}
+
+/*Heading Common Ended*/
+/*rating stars common started*/
+.rating-stars i {
+  color: #FFAB00;
+}
+
+/*rating stars common ended*/
+/*latest games started*/
+#latestGames {
+  padding: 50px 0;
+}
+#latestGames .owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #869791;
+  font-size: 40px;
+  line-height: 450px;
+  margin: 0;
+  padding: 0 60px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+}
+#latestGames .owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: -65px;
+  padding-left: 20px;
+}
+#latestGames .owl-theme .owl-controls .owl-buttons .owl-prev span {
+  background: url("../../images/studio/latest/arrow.png");
+  background-size: contain;
+  height: 38px;
+  background-repeat: no-repeat;
+}
+#latestGames .owl-theme .owl-controls .owl-buttons .owl-next {
+  right: -65px;
+  padding-right: 20px;
+}
+#latestGames .owl-theme .owl-controls .owl-buttons .owl-next .arrow-right {
+  transform: rotate(185deg);
+  background: url("../../images/studio/latest/arrow.png");
+  background-size: contain;
+  height: 38px;
+  background-repeat: no-repeat;
+}
+#latestGames .owl-carousel .game-slide {
+  margin: 0 20px;
+}
+#latestGames .game-slide .game-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+#latestGames .game-slide .game-content {
+  background: #1F1E1E;
+  padding: 30px 40px;
+  position: relative;
+}
+#latestGames .game-slide .game-content .side-line {
+  position: absolute;
+  top: 19px;
+  left: 21px;
+  text-align: center;
+}
+#latestGames .game-slide .game-content .side-line strong {
+  font-weight: bold;
+  font-size: 10px;
+  color: #fff;
+}
+#latestGames .game-slide .game-content .side-line strong.yellow {
+  color: #FFAB00;
+}
+#latestGames .game-slide .game-content .side-line div {
+  height: 118px;
+  width: 1px;
+  margin: 0 auto;
+  background: #fff;
+  display: block;
+}
+#latestGames .game-slide .game-content .game-title {
+  color: #fff;
+  letter-spacing: 5px;
+}
+#latestGames .game-slide .game-content .game-title:hover {
+  color: #FFAB00;
+}
+#latestGames .game-slide .game-content .game-description {
+  color: #fff;
+  font-family: "Neuropol X";
+  font-size: 13px;
+}
+#latestGames .game-slide .game-content .game-bar {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  list-style: none;
+}
+#latestGames .game-slide .game-content .game-bar li {
+  float: left;
+  width: 50%;
+  font-family: "Neuropol X";
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+/*latest games Ended*/
+/*gallery started*/
+#gallery {
+  padding: 30px 0;
+}
+#gallery .images {
+  margin-top: 80px;
+}
+#gallery .images img {
+  width: 100%;
+}
+#gallery .images .long-img {
+  margin-bottom: 12px;
+}
+#gallery .images .long-img img {
+  height: 665px;
+}
+#gallery .images .midum-img {
+  margin-bottom: 12px;
+}
+#gallery .images .midum-img img {
+  height: 213.5px;
+}
+#gallery .images .small-img {
+  margin-bottom: 12px;
+}
+#gallery .images .small-img img {
+  height: 157.5px;
+}
+
+/*gallery ended*/
+/*members*/
+#members {
+  padding: 30px 0;
+}
+#members .boxes {
+  margin-top: 50px;
+}
+#members .boxes .bg {
+  background: url("../../images/studio/numbers/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#members .boxes .bg .box {
+  height: 200px;
+  text-align: center;
+  display: table;
+  width: 100%;
+  padding: 45px 0 0 0;
+}
+#members .boxes .bg .box .boxcontent {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#members .boxes .bg .box .boxcontent h3 {
+  color: #FFAB00;
+  font-size: 50px;
+  position: relative;
+}
+#members .boxes .bg .box .boxcontent h3 span {
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  color: #fff;
+}
+#members .boxes .bg .box .boxcontent p {
+  color: #fff;
+  font-family: "Neuropol X";
+  margin-bottom: 0;
+}
+
+/*reviews*/
+#reviews {
+  padding: 50px 0;
+}
+#reviews .reviews {
+  margin-top: 50px;
+}
+#reviews .reviews .nav-tabs {
+  width: 366px;
+  border-bottom: 0;
+  margin: 0px auto;
+}
+#reviews .reviews .nav-tabs li {
+  margin: 0 10px;
+}
+#reviews .reviews .nav-tabs li img {
+  width: 100px;
+  height: 100px;
+}
+#reviews .reviews .nav-tabs li a {
+  padding: 0;
+}
+#reviews .reviews .nav-tabs li a.active {
+  padding: 0;
+  background: unset;
+  border: 0;
+}
+#reviews .reviews .nav-tabs li a.active img {
+  border: 3px solid #FFAB00;
+}
+#reviews .reviews .tab-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+#reviews .reviews .tab-content .tab-pane {
+  font-family: "Neuropol X";
+}
+#reviews .reviews .tab-content .tab-pane .name {
+  color: #FFAB00;
+}
+
+/*video*/
+#video {
+  padding: 80px 0;
+  position: relative;
+}
+#video .bar {
+  background-color: #1F1E1E;
+  padding: 20px 50px;
+  width: 20%;
+  text-align: center;
+}
+#video .bar img {
+  height: 500px;
+}
+#video .player {
+  position: absolute;
+  top: 18%;
+  left: 113px;
+  width: 90%;
+}
+#video .player iframe {
+  height: 460px;
+  width: 100%;
+}
+
+/*recent*/
+#recent {
+  padding: 50px 0;
+  height: 885px;
+}
+#recent .recent-blog {
+  width: 80%;
+  padding-top: 30px;
+  margin: 0 0 0 auto;
+  position: relative;
+}
+#recent .recent-blog img {
+  width: 100%;
+  height: 600px;
+}
+#recent .recent-blog .blog-detail {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #1F1E1E;
+  padding: 35px 0 35px 38px;
+  position: absolute;
+  bottom: -100px;
+  color: #fff;
+  left: 10%;
+}
+#recent .recent-blog .blog-detail .title-area h3 {
+  font-size: 40px;
+}
+#recent .recent-blog .blog-detail .title-area .dates {
+  font-family: "Neuropol X";
+}
+#recent .recent-blog .blog-detail .title-area .dates p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#recent .recent-blog .blog-detail .title-area .dates i {
+  font-size: 16px;
+}
+#recent .recent-blog .blog-detail .links {
+  border-left: 1px solid #fff;
+}
+#recent .recent-blog .blog-detail .links a {
+  display: block;
+  padding: 10px 20px;
+}
+#recent .recent-blog .blog-detail .links a.link-1 {
+  border-bottom: 1px solid #fff;
+}
+#recent .recent-blog .blog-detail .links a.link {
+  color: #FFAB00;
+  font-family: "Neuropol X";
+  text-transform: uppercase;
+}
+#recent .recent-blog .blog-detail .downloadButon {
+  background-color: #FFAB00;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0 0 0 auto;
+}
+#recent .recent-blog .blog-detail .downloadButon img {
+  height: 30px;
+  width: auto;
+  margin-bottom: 5px;
+}
+#recent .recent-blog .blog-detail .description {
+  font-family: "Neuropol X";
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-right: 40px;
+}
+
+/*Team*/
+#team {
+  padding: 50px 0;
+}
+#team .team-boxes {
+  margin-top: 70px;
+}
+#team .team-box {
+  margin-bottom: 30px;
+}
+#team .team-box .main-img {
+  width: 100%;
+  height: 300px;
+}
+#team .team-box .description {
+  color: #fff;
+  padding: 10px;
+}
+#team .team-box .description a {
+  margin: 0 15px;
+}
+#team .team-box.box-margin {
+  margin-top: 100px;
+}
+
+/*Blogs*/
+#blogs {
+  padding: 0 0 50px 0;
+}
+#blogs .blogs {
+  margin-top: 20px;
+}
+#blogs .blogs .blog-box .blog-img {
+  width: 100%;
+  height: 200px;
+}
+#blogs .blogs .blog-box .blog-description {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  padding: 30px;
+  color: #fff;
+}
+#blogs .blogs .blog-box .blog-description p {
+  font-family: "Neuropol X";
+  font-size: 13px;
+}
+#blogs .blogs .blog-box .blog-description .left-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#blogs .blogs .blog-box .blog-description .right-img {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+#blogs .blogs .blog-box .blog-button {
+  display: block;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  color: #fff;
+}
+#blogs .blogs .blog-box .blog-button:hover {
+  background: #FFAB00;
+}
+
+/*About*/
+#about {
+  padding: 50px 0;
+}
+#about #map {
+  border: 2px solid #FFAB00;
+  height: 304px;
+}
+#about #map iframe {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 0;
+}
+#about .description p {
+  color: #fff;
+  font-family: "Neuropol X";
+}
+#about .description iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/*contact*/
+#contact {
+  padding: 50px 0;
+}
+#contact h3 {
+  background-color: #FFAB00;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+#contact form {
+  border-radius: 7px;
+  border: 1px solid #FFAB00;
+  padding: 20px;
+}
+#contact form textarea {
+  background: transparent;
+  height: 200px;
+  color: #fff;
+}
+#contact form input {
+  background: transparent;
+  height: 50px;
+  color: #fff;
+  border-right: 0;
+}
+#contact form .input-group-append {
+  height: 50px;
+}
+#contact form .input-group-append .input-group-text {
+  border-left: 0;
+  background: transparent;
+}
+#contact form .input-group-append i {
+  color: #FFAB00;
+}
+#contact form .input-group-append img {
+  width: 100%;
+}
+#contact form .button {
+  border: 1px solid #fff;
+  padding: 15px 80px;
+  color: #fff;
+  font-family: "Neuropol X";
+  background-color: transparent;
+}
+#contact form .button:hover {
+  background: #FFAB00;
+}
+#contact #map {
+  border: 2px solid #FFAB00;
+  height: 574px;
+}
+#contact #map iframe {
+  width: 100%;
+  height: 570px;
+  margin-bottom: 0;
+}
+
+/* footer*/
+footer {
+  background: url("../../images/studio/footer/bgimg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-color: #151515;
+}
+footer .rod-img {
+  height: 200px;
+  position: absolute;
+  left: 0;
+}
+footer .top-section {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+footer .top-section .footer-heading {
+  color: #FFAB00;
+  margin-bottom: 20px;
+}
+footer .top-section .about .rod-img {
+  height: 155px;
+}
+footer .top-section .about p {
+  font-family: "Neuropol X";
+  color: #fff;
+  font-size: 13px;
+}
+footer .top-section .about form input {
+  background: transparent;
+  height: 50px;
+  color: #fff;
+  border-right: 0;
+}
+footer .top-section .about form .input-group-append {
+  height: 50px;
+}
+footer .top-section .about form .input-group-append .input-group-text {
+  border-left: 0;
+  background: transparent;
+}
+footer .top-section .about form .input-group-append img {
+  width: 100%;
+}
+footer .top-section .links {
+  position: relative;
+  padding: 0 20px;
+}
+footer .top-section .links ul {
+  padding: 0;
+  list-style: none;
+}
+footer .top-section .links ul li a {
+  display: block;
+  color: #fff;
+  display: block;
+  padding: 7px;
+  font-family: Neuropol X;
+}
+footer .top-section .links ul li a:hover {
+  color: #FFAB00;
+}
+footer .top-section .contact-detail h6 {
+  margin-bottom: 5px;
+}
+footer .top-section .contact-detail p {
+  font-size: 16px;
+  color: #fff;
+  font-family: Neuropol X;
+}
+footer .bottom-section {
+  padding: 20px;
+  border-top: 1px solid #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Neuropol X";
+  color: #fff;
+}
+
+/* Mobile Screens Responsive Started*/
+@media screen and (max-width: 760px) {
+  header .left {
+    float: unset;
+    width: 100%;
+    padding: 7px 20px;
+  }
+  header .left .navbar-toggler {
+    color: #fff;
+  }
+  header .right {
+    float: unset;
+    width: 100%;
+  }
+
+  .heading h3 {
+    font-size: 35px;
+  }
+  .heading h3 .right {
+    height: 50px;
+    right: -17px;
+  }
+  .heading h3 .left {
+    height: 50px;
+    left: -17px;
+  }
+
+  main #slider {
+    height: 370px;
+    background-size: cover;
+    padding: 20px;
+  }
+  main #slider h1 {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-size: 30px;
+  }
+  main #slider h1 img {
+    margin: 0 20px;
+    height: 70px;
+  }
+  main #slider span {
+    display: none;
+  }
+  main #slider p {
+    display: none;
+  }
+  main #slider .main-img {
+    margin-top: 0;
+    height: 235px;
+  }
+
+  #latestGames {
+    padding: 50px 0 0 0;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons {
+    display: none;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons div {
+    top: 50px;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 3px;
+    padding-left: 21px;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: 3px;
+    padding-right: 23px;
+  }
+  #latestGames .game-slide .game-content .game-bar {
+    width: 100%;
+  }
+
+  #gallery {
+    display: none;
+  }
+
+  #reviews .reviews .nav-tabs {
+    width: 100%;
+  }
+  #reviews .reviews .nav-tabs li {
+    margin: 0 6px;
+  }
+  #reviews .reviews .nav-tabs li img {
+    width: 90px;
+    height: 90px;
+  }
+  #reviews .reviews .tab-content {
+    width: 100%;
+  }
+  #reviews .reviews .tab-content .tab-pane {
+    height: 200px;
+  }
+  #reviews .reviews .tab-content .tab-pane p {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  #video {
+    padding: 80px 0 0;
+  }
+  #video .bar {
+    display: none;
+  }
+  #video .player {
+    position: unset;
+    width: 100%;
+    left: 0;
+  }
+  #video .player iframe {
+    height: auto;
+  }
+
+  #recent {
+    height: auto;
+    padding: 50px 0 0 0;
+  }
+  #recent .recent-blog {
+    width: 90%;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+  #recent .recent-blog img {
+    height: 200px;
+  }
+  #recent .recent-blog .blog-detail {
+    width: 100%;
+    padding: 10px;
+    position: unset;
+  }
+  #recent .recent-blog .blog-detail .title-area {
+    font-size: 25px;
+  }
+  #recent .recent-blog .blog-detail .title-area p {
+    font-size: 12px;
+  }
+  #recent .recent-blog .blog-detail .description {
+    padding: 0;
+    text-align: justify;
+    font-size: 13px;
+  }
+  #recent .recent-blog .blog-detail .downloadButon {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #team {
+    padding: 50px 0 0 0;
+  }
+  #team .team-boxes {
+    margin-top: 20px;
+  }
+  #team .team-boxes .team-box.box-margin {
+    margin-top: 0;
+  }
+
+  #blogs .blogs .blog-box {
+    margin-bottom: 20px;
+  }
+
+  footer .rod-img {
+    left: 3%;
+  }
+  footer .top-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  footer .top-section .about {
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  footer .top-section .links {
+    margin-bottom: 20px;
+  }
+  footer .top-section .contact-detail {
+    padding: 10px;
+  }
+
+  #about {
+    padding: 20px 0;
+  }
+  #about .description iframe {
+    height: 200px;
+  }
+
+  #contact {
+    padding: 20px 0;
+  }
+  #contact form {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  #contact form .button {
+    width: 100%;
+  }
+  #contact #map {
+    height: 204px;
+  }
+  #contact #map iframe {
+    height: 200px;
+  }
+}
+/* Mobile Screens Responsive Ended*/
+/* Ipad Screens Responsive Started*/
+@media screen and (max-width: 860px) and (min-width: 760px) {
+  header .left {
+    float: unset;
+    width: 100%;
+    padding: 7px 20px;
+  }
+  header .left .navbar-toggler {
+    color: #fff;
+  }
+  header .right {
+    float: unset;
+    width: 100%;
+  }
+
+  .heading h3 {
+    font-size: 35px;
+  }
+  .heading h3 .right {
+    height: 50px;
+    right: -17px;
+  }
+  .heading h3 .left {
+    height: 50px;
+    left: -17px;
+  }
+
+  main #slider {
+    height: 370px;
+    background-size: cover;
+    padding: 20px;
+  }
+  main #slider h1 {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-size: 30px;
+  }
+  main #slider h1 img {
+    margin: 0 20px;
+    height: 70px;
+  }
+  main #slider span {
+    display: none;
+  }
+  main #slider p {
+    display: none;
+  }
+  main #slider .main-img {
+    margin-top: 0;
+    height: 235px;
+  }
+
+  #latestGames {
+    padding: 50px 0 0 0;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons {
+    display: none;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons div {
+    top: 50px;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 3px;
+    padding-left: 21px;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: 3px;
+    padding-right: 23px;
+  }
+  #latestGames .game-slide .game-content .game-bar {
+    width: 100%;
+  }
+
+  #gallery {
+    display: none;
+  }
+
+  #reviews .reviews .nav-tabs {
+    width: 100%;
+  }
+  #reviews .reviews .nav-tabs li {
+    margin: 0 6px;
+  }
+  #reviews .reviews .nav-tabs li img {
+    width: 90px;
+    height: 90px;
+  }
+  #reviews .reviews .tab-content {
+    width: 100%;
+  }
+  #reviews .reviews .tab-content .tab-pane {
+    height: 200px;
+  }
+  #reviews .reviews .tab-content .tab-pane p {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  #video {
+    padding: 80px 0 0;
+  }
+  #video .bar {
+    display: none;
+  }
+  #video .player {
+    position: unset;
+    width: 100%;
+    left: 0;
+  }
+  #video .player iframe {
+    height: auto;
+  }
+
+  #recent {
+    height: auto;
+    padding: 50px 0 0 0;
+  }
+  #recent .recent-blog {
+    width: 90%;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+  #recent .recent-blog img {
+    height: 200px;
+  }
+  #recent .recent-blog .blog-detail {
+    width: 100%;
+    padding: 10px;
+    position: unset;
+  }
+  #recent .recent-blog .blog-detail .title-area {
+    font-size: 25px;
+  }
+  #recent .recent-blog .blog-detail .title-area p {
+    font-size: 12px;
+  }
+  #recent .recent-blog .blog-detail .description {
+    padding: 0;
+    text-align: justify;
+    font-size: 13px;
+  }
+  #recent .recent-blog .blog-detail .downloadButon {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #team {
+    padding: 50px 0 0 0;
+  }
+  #team .team-boxes {
+    margin-top: 20px;
+  }
+  #team .team-boxes .team-box.box-margin {
+    margin-top: 0;
+  }
+  #team .team-boxes .team-box .main-img {
+    height: 200px;
+  }
+   #team .team-box .description a {
+    margin: 0 5px;
+  }
+
+  #blogs .blogs .blog-box {
+    margin-bottom: 20px;
+  }
+
+  footer .rod-img {
+    left: 3%;
+  }
+  footer .top-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  footer .top-section .about {
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  footer .top-section .links {
+    margin-bottom: 20px;
+  }
+  footer .top-section .contact-detail {
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  #about {
+    padding: 20px 0;
+  }
+  #about .description iframe {
+    height: 200px;
+  }
+
+  #contact {
+    padding: 20px 0;
+  }
+  #contact form {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  #contact form .button {
+    width: 100%;
+  }
+  #contact #map {
+    height: 204px;
+  }
+  #contact #map iframe {
+    height: 200px;
+  }
+}
+/* Ipad Responsive Ended*/
+/* Ipad Pro Responsive Started*/
+@media screen and (max-width: 1050px) and (min-width: 860px) {
+  header .left {
+    float: unset;
+    width: 100%;
+    padding: 7px 20px;
+  }
+  header .left .navbar-toggler {
+    color: #fff;
+  }
+  header .right {
+    float: unset;
+    width: 100%;
+  }
+
+  main #slider h1 {
+    width: 100%;
+  }
+  main #slider span {
+    display: none;
+  }
+  main #slider p {
+    display: none;
+  }
+
+  #latestGames {
+    padding: 50px 0 0 0;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons {
+    display: none;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons div {
+    top: 50px;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 3px;
+    padding-left: 21px;
+  }
+  #latestGames .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: 3px;
+    padding-right: 23px;
+  }
+  #latestGames .game-slide .game-content .game-bar {
+    width: 100%;
+  }
+
+  footer .top-section .contact-detail {
+    padding: 10px;
+    overflow: hidden;
+  }
+}
+/* Ipad Pro Responsive Ended*/
+
+/*# sourceMappingURL=studio.css.map */

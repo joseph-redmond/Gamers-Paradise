@@ -1,0 +1,61 @@
+﻿<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5  col-2">
+				<!--navigation -->
+				<nav class="navbar navbar-expand-lg">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fa fa-bars"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" asp-page="/index">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" asp-page="/tournaments">Tournments</a>
+							</li>
+					
+							<li class="nav-item">
+								<a class="nav-link" asp-page="/blog">Blog</a>
+							</li>
+					
+							<li class="nav-item">
+								<a class="nav-link" asp-page="/forum">Forum</a>
+							</li>
+					
+							<li class="nav-item">
+								<a class="nav-link" asp-page="/shop">Shop</a>
+							</li>
+					
+							<li class="nav-item">
+								<a class="nav-link" asp-page="/cart">Cart</a>
+							</li>
+					
+							<li class="nav-item">
+								<a class="nav-link" asp-page="/contact">Contact</a>
+							</li>
+							<partial class="nav-item"name="_LoginPartialMobile" />
+							<!--<li class="nav-item show-on-mobile">
+								<a class="nav-link" asp-page="/login">Login</a>
+							</li>
+					
+							<li class="nav-item show-on-mobile">
+								<a class="nav-link" asp-page="/register">Register</a>
+							</li>-->
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="col-md-7 col-10 logo">
+				<a class="navbar-brand" asp-page="/index"><img alt="Image Title" src="/images/header/logo.png"></a>
+				<div class="buttons float-right show-on-dekstop">
+					<!--<a asp-page="/login" class=" button"><i class="fa fa-key"></i> &nbsp; Login</a> &nbsp;
+					<a asp-page="/register" class=" button"><i class="fa fa-user"></i> &nbsp;Register</a>-->
+                        <partial name="_LoginPartialDesktop" />	
+				</div>
+			</div>
+		</div>
+	</div>
+<</header>

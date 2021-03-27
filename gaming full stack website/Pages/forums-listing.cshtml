@@ -1,0 +1,80 @@
+﻿@page
+@model gaming_full_stack_website.Pages.forums_listingModel
+@{
+}
+	<section id="page-heading">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="content">
+							<h1>Adventure</h1>
+							<p>Game forums to get a feel for how their guild works. A quick, but somewhat unexpected explanation about PVP is: "You might want more than 50 players in your party because you need some serious combat experience on the fly</p>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="img-border">
+							<div class="img-bg">
+								<img alt="Image Title" src="/images/comp/heading-img.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<!-- forums -->
+		<section id="forums">
+			<div class="container">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th width="60%">Tipics</th>
+							<th width="10%" class="text-center">Voices</th>
+							<th width="10%" class="text-center">Posts</th>
+							<th width="20%" class="text-center">Last Post</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a asp-page="forum-detail">
+
+									<h4 class="title">Talented Riders</h4>
+									<p class="detail mb-0">Started By : John Doe</p>
+
+								</a>
+							</td>
+							<td class="text-center">4</td>
+							<td class="text-center">30</td>
+							<td class="text-center"><p class="time mb-0">1 week ago</p> <p class="user"><i class="fa fa-user"></i>&nbsp; Jassica</p> </td>
+						</tr>
+						<tr>
+							<td>
+								<a asp-page="forum-detail">
+									<h4 class="title">Test</h4>
+									<p class="detail mb-0">Started By : Elan Wakee</p>
+								</a>
+							</td>
+							<td class="text-center">4</td>
+							<td class="text-center">30</td>
+							<td class="text-center"><p class="time mb-0">1 week ago</p> <p class="user"><i class="fa fa-user"></i>&nbsp; Jassica</p> </td>
+						</tr>
+						<tr>
+							<td>
+								<a asp-page="forum-detail">
+
+									<h4 class="title">Brave Fighters</h4>
+									<p class="detail mb-0">Started By : Janny Selena</p>
+
+								</a>
+								
+							</td>
+							<td class="text-center">4</td>
+							<td class="text-center">30</td>
+							<td class="text-center"><p class="time mb-0">1 week ago</p> <p class="user"><i class="fa fa-user"></i>&nbsp; Jassica</p> </td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</section>
+
